@@ -8,6 +8,7 @@ This is a simple challenge to be used as part of an interview process for .NET b
 3. You are free to pull in any framework or libraries in order to solve the challenge, but be prepared to reason about your choices.
 4. Use the patterns and practices you think are best on any part of the challenge, again be prepared to reason about your choices.
 5. Commit your changes as you solve the various challenges and whenever you feel is a good time to commit. Let the commit message describe what part you solved.
+6. Keep initial commit unchanged, so we can use git diff to see your changes.
 
 ## Background information
 The code is a quiz solution based on .NET Core. You have a quiz client project and a quiz service project, both have corresponding test projects.
