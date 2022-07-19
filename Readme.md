@@ -3,7 +3,7 @@
 This is a simple challenge to be used as part of an interview process for .NET backend developers. The challenge is intended to be done offline at your own speed using the tools of your choice. There is no single correct solution, just a set of tasks to trigger some relevant discussions. Be prepared to present your solution when we meet.
 
 ## Rules
-1. You are free to use any tool you like when developing.
+1. You are free to use any tool you like when developing. Important note: as we are targeting .NET 6 it's not possible to build the solution in VS 2019. Potential alternatives include VS 2022 and VS Code.
 2. You can use as much time as you like, but the intention is not to have you spend more than a couple of hours.
 3. You are free to pull in any framework or libraries in order to solve the challenge, but be prepared to reason about your choices.
 4. Use the patterns and practices you think are best on any part of the challenge, again be prepared to reason about your choices.
