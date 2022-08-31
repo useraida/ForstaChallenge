@@ -1,7 +1,8 @@
 # Backend Candidate Challenge
 
 This is a simple challenge to be used as part of an interview process for .NET backend developers. The challenge is intended to be done offline at your own speed using the tools of your choice. There is no single correct solution, just a set of tasks to trigger some relevant discussions. Be prepared to present your solution when we meet.   
-Make a copy of this repo. Yes, we know that "Fork" exists, but please don't use it.
+
+#### Make a copy of this repo. Yes, we know that "Fork" exists, but please don't use it.
 
 ## Rules
 1. You are free to use any tool you like when developing. Important note: as we are targeting .NET 6 it's not possible to build the solution in VS 2019. Potential alternatives include VS 2022 and VS Code.
