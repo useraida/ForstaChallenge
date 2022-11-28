@@ -131,4 +131,27 @@ public class QuizController : Controller
         _connection.ExecuteScalar(sql, new {AnswerId = aid});
         return NoContent();
     }
+
+    // POST api/quizzes/5/play
+    [HttpPost("{id}/play")]
+    public int GetNumberOfCorrectAnswers(int id, [FromBody] Dictionary<int, int> answers)
+    {
+        if (answers.Count == 0)
+        {
+            return 0;
+        }
+
+        QuizResponseModel quiz = (QuizResponseModel)this._quizService.GetById(id);
+        int counter = 0;
+        for (int i = 0; i < quiz.Questions.Count(); i++)
+        {
+            var questionId = quiz.Questions.ToList()[i].Id;
+            var correctAnswerId = quiz.Questions.ToList()[i].CorrectAnswerId;
+            if (answers.ContainsKey(questionId) && answers[questionId] == correctAnswerId)
+            {
+                counter += 1;
+            }
+        }
+        return counter;
+    }
 }
