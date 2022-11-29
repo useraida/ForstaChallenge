@@ -68,6 +68,8 @@ public class QuizzesControllerTest
         
     public async Task AQuizDoesNotExists_WhenPostingAQuestion_ReturnsNotFound()
     {
+        //TODO var QuizApiEndPoint should be removed
+        // The already created var QuizApiEndPoint in combination with var quizId should be used
         const string QuizApiEndPoint = "/api/quizzes/999/questions";
 
         using (var testHost = new TestServer(new WebHostBuilder()
